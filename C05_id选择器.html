@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS id选择器</title>
+
+    <style>
+        #p1{
+            color:red;
+        }
+        #p2{
+            font-size: 50px;
+        }
+        .c1 {
+            background:yellow;
+        }
+    </style>
+
+</head>
+<body>
+
+    <p id="p1">AAAA</p>
+    <p class="c1" id="p2">BBBBB</p>
+    <!-- 不能重复，只能唯一id  但是在使用css效果时，如果不唯一也没什么影响 这是个坑-->
+    <div id="p2">CCC</div>
+
+    
+</body>
+</html>
