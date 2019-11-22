@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- 使用action 属性来提示 数据提交的主机，使用method 属性来指定提交的方式 ，默认get -->
+    <form action="https://www.baidu.com" method="POST">
+        <label>姓名:</label>
+        <!-- name 和value 两个属性 需要写在可以收集到数据的标签 -->
+        <!-- input输入类型标签不能使用 value 来在指定提示文字 -->
+        <!-- 如果需要提示文字， 可以使用placeholder  -->
+        <input type="text" name="userName" placeholder="请输入姓名">
+
+        <label>密码:</label>
+        <input type="password" name="password" placeholder="请输入密码">
+        <hr>
+
+
+        <!-- 单选框-->
+        <label for="">性别</label>
+        <!-- 如果一个单选框有多个选项，那么这些选项需要使用同一个name值
+        如果多个选项没有使用同一个name值，那么可以造成每个选项都选中的状态 -->
+        <input type="radio" name="gender" value="man">男
+        <input type="radio" name="gender" value="woman">女
+        <hr>
+
+
+
+
+        <!-- 多选框 -->
+        <!-- 多选框和单选框 多个选项也需要同一个name值-->
+        <label for="">爱好</label>
+        <input type="checkbox" name="hohby" value="1">吃
+        <input type="checkbox" name="hohby" value="2">喝
+        <input type="checkbox" name="hohby" value="3">玩
+        <input type="checkbox" name="hohby" value="4">乐
+        <hr>
+
+
+        <!-- 下拉框 -->
+        <label for="">地址</label>
+        <!-- 下拉列表中的name 属性，name 在select 上,value 在option -->
+        <select name="address">
+            <!-- 下拉选项需要通过 option 标签来完成 -->
+            <option value="1">北京</option>
+            <option value="2">上海</option>
+            <option value="3">深圳</option>
+        </select>
+
+
+        <!-- 文件上传 只给个name 就行 -->
+        <label for="">照片</label>
+        <input type="file" name="photo">
+        <hr>
+
+
+        <!-- 多行文本输入框 -->
+        <label>个人介绍</label>
+        <textarea name="description" placeholder="个人描述"></textarea>
+        <hr>
+
+
+
+
+        <!-- 提交按钮 -->
+        <input type="submit" value="确定">
+        <!-- 重置按钮 -->
+        <input type="reset" value="清空">
+        <!-- 普通按钮 -->
+        <input type="button" value="样子货">
+    </form>
+
+</body>
+
+</html>

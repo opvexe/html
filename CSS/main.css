@@ -1,0 +1,7 @@
+/*  这里是一个CSS 文件  在这里写样式时
+    不需要写style 标签，直接使用Css语法样式规则，即可
+*/
+p {
+    color: blue;
+    font-size: 50px;
+}

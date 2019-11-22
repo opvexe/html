@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+<style>
+    /* 使用标签名作为选择器，来选择标签 */
+    p {
+        color: red;
+        font-size: 50px;
+    }
+    /* 如果还要给其他标签设置样式，那么单独设置 */
+    div {
+        color:blue;
+        width: 200px;
+        height: 200px;
+        background: yellow;
+    }
+</style>
+
+</head>
+<body>
+    
+    <!-- 通过选择器，可以选中一个页面中，所有指定类型的标签 -->
+    <p>A</p>
+    <div>
+            <p>B</p>
+    </div>
+
+    <div>
+        <div>
+                <p>C</p>
+        </div>
+    </div>
+
+    <p>D</p>
+
+</body>
+</html>
