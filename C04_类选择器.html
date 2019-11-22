@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+        /* 通过类名选中标签 */
+        .redfont {
+            color: red;
+        }
+
+        .bg {
+            background: blue;
+        }
+
+        .box {
+            height: 200px;
+            width: 200px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <p class="redfont"> AAAAAA</p>
+    <div class="redfont">BBBBBB</div>
+    <h3 class="redfont">CCCCCCC</h3>
+
+    <p>DDDD</p>
+    <div>EEEEE</div>
+    <h3>FFFFFF</h3>
+
+    <!-- 为div 标签取了三个类名 redfont  bg  box-->
+    <div class="redfont bg box"></div>
+    <hr>
+
+    <!-- 没有redfont的情况 -->
+    <div class="bg box"></div>
+    <hr>
+    
+    <!-- 多了xxx的情况 -->
+    <div class="bg box xxx"></div>
+
+</body>
+
+</html>
