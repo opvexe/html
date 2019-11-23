@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+        /* 组选择器 */
+        h1,
+        h2,
+        h3,
+        p {
+            color: red;
+        }
+
+        /*  .hh,h2,#d3 p {} 这是组里包含层级 d3 p 是层级 */
+        .hh,
+        h2,
+        #d3,
+        p {
+            color: yellow;
+        }
+
+        /* .box1 {
+            width: 200px;
+            height: 200px;
+            background:red;
+        }
+
+        .box2 {
+            width: 200px;
+            height: 200px;
+            background:yellow;
+        }
+
+        .box3 {
+            width: 200px;
+            height: 200px;
+            background:green;
+        } */
+
+        /* 提取 两种方式*/
+        /* 提取方式一 */
+        /* div {
+            width: 200px;
+            height: 200px;
+        }
+        .box1 {
+            background: aqua;
+        }
+        .box2 {
+            background: red;
+        }
+        .box3 {
+            background: burlywood;
+        } */
+
+        /* 方式二  组选择器使用方式*/
+        .box1, .box2, .box3 {
+            width: 200px;
+            height: 200px;
+        }
+
+        .box1 {
+            background: aqua;
+        }
+
+        .box2 {
+            background: red;
+        }
+
+        .box3 {
+            background: burlywood;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- 组选择器 -->
+    <h1 class="hh">AA</h1>
+    <h2>BB</h2>
+    <h3 id="d3">CC</h3>
+    <p>DD</p>
+
+    <div class="box1">AA</div>
+    <div class="box2">BB</div>
+    <div class="box3">CC</div>
+
+</body>
+
+</html>
