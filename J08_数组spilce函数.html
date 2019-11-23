@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+<script>
+
+var color = [0,1,2,3,4,5];
+console.log(color);
+
+//删除数据
+//参数1 起始下标
+//参数2 删除个数
+color.splice(3,4);
+
+//打印结果 删除了3,4,5,6
+console.log(color);
+
+//插入数据
+//4 的位置插入'A'
+color.splice(4,0,'A');
+console.log(color)
+
+
+//插入多个数据
+color.splice(4,0,'A','B','C');
+console.log(color)
+
+//替换
+//替换一个数据
+color.splice(4,1,'A');
+console.log(color)
+
+//替换多个数据
+color.splice(4,1,'A','B','C');
+console.log(color)
+
+//多个替换多个
+color.splice(4,5,'A','B','C');
+console.log(color)
+
+</script>
+
+</head>
+<body>
+    
+</body>
+</html>

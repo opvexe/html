@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <script>
+        
+        //初始化对象
+        var alist = new Array(1,2,3)
+
+        //获取元素个数
+        console.log(alist.length)
+
+        //遍历数组
+        for (let index = 0; index < alist.length; index++) {
+             re = alist[index]
+             console.log(re)
+        }
+
+        //字面量
+        var alist2 = [1,2,3,"sobot"]
+
+        //通过下标获取值
+        console.log(alist[0])
+        console.log(alist[1])
+        //越界不会报错 ，会报出undefined
+        console.log(alist[10])
+        //修改值
+        alist[0] = "aaaa"
+    
+    
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
