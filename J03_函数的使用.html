@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <script>
+
+        //  无参无返回值定义 
+        function fnShow1() {
+            alert("无参无返回值定义");
+        }
+
+        //函数调用
+        fnShow1();
+
+
+        //无参有返回值的函数
+        function fnShow2() {
+            return "无参有返回值函数"
+        }
+
+       var re =fnShow2();
+        alert(re)
+
+
+        //有参但无返回值函数
+        function fnShow3(n) {
+            alert("有参无返回值----"+n)
+        }
+
+        fnShow3(10);
+
+
+        //有参有返回值函数
+        function fnShow4(n) {
+            return 100+n
+        }
+
+        alert(fnShow4(10));
+
+        
+    </script>
+
+</head>
+<body>
+    
+</body>
+</html>
