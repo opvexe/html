@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+        /* 只想设置div 里的p 设置成红色 */
+        div p {
+            color: red;
+        }
+
+        /* 验证坑 */
+        p div {
+            color: red;
+        }
+
+        /* span标签 */
+        p span {
+            color: red;
+            font-size: 50px;
+        }
+
+        /* 层级选择器 其他用法 */
+        .cd #hh {
+            color: red;
+        }
+        /* 祖孙关系 */
+        div span {
+            font-size: 100px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- 这是层级选择器的普通使用方式 -->
+    <P>AAAA</P>
+
+    <!-- 只想设置div 里的p 设置成红色 -->
+    <div>
+        <p>BBBB</p>
+    </div>
+
+    <!-- 验证 一个坑 p 里嵌套div -->
+    <!-- 因为p 标签中不能嵌套div 标签，如果这么定义时 在使用时可能找不到层级的子标签 -->
+    <p>
+        <div>CCCC</div>
+    </p>
+
+    <!-- 区间标签 -->
+    <span>DDD</span>
+    <p>惊爆价：
+        <span>xxx</span>
+        9元
+    </p>
+
+
+    <!-- 层级选择器 使用其他选择器方式实现 -->
+    <div class="cd">
+        <h1 id="hh">EEE</h1>
+    </div>
+
+    <!-- 层级选择器，所以不光可以有父子 ，还可以有祖孙 -->
+    <div>
+        <p>AA<span>BB</span>CC</p>
+    </div>
+
+</body>
+
+</html>
