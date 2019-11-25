@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <script>
+
+        // 视图加载完毕时
+        window.onload = function () {
+            // 获取对象
+            var odiv = document.getElementById("dd");
+            alert(odiv);
+            // 获取对象
+            var pid = document.getElementById("pid");
+            alert(pid)
+        };
+    </script>
+
+</head>
+
+<body>
+
+    <!--  创建一个带ID 属性的标签-->
+    <div id="dd">AA</div>
+    <!-- p#pid -->
+    <!-- p.pid -->
+    <!-- p>p -->
+    <p id="pid">BBB</p>
+</body>
+
+</html>
+
+<script>
+    // 通过document 对象方法获取标签
+    var mark1 = document.getElementById("dd");
+    alert(mark1);
+</script>
