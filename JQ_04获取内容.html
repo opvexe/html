@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+
+    <script src="./JS/jquery-1.12.4.min.js"></script>
+
+
+    <script>
+    
+        $(function(){
+            
+            var p =$('p');
+
+            //获取标签内容
+            alert(p.html());
+        
+            //设置内容
+            p.html('<a href="http://www.itcast.cn">百度</a>');
+
+            //追加内容
+
+            p.append('<hr>');
+
+            p.append('<a href="http://www.baidu.cn">河马</a>');
+
+        });
+    
+    </script>
+
+
+</head>
+<body>
+
+
+    <p>AAAAAAAAA</p>
+    
+</body>
+</html>
