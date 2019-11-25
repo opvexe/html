@@ -17,6 +17,9 @@
             // 获取对象
             var pid = document.getElementById("pid");
             alert(pid)
+
+            // getElementById 当id 名重复的时候 ， 会获取第一个id 的标签
+            //如果HTML 标签要和js 配合使用，那么id 名不能重复
         };
     </script>
 
@@ -30,6 +33,7 @@
     <!-- p.pid -->
     <!-- p>p -->
     <p id="pid">BBB</p>
+    <div id="pid">CCC</div>
 </body>
 
 </html>

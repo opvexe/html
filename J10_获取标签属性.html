@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+<script>
+
+    window.onload = function(){
+        //获取标签对象
+        var mkin = document.getElementById("din");
+        var mkA  =document.getElementById("da");
+
+        //获取标签属性
+        console.log('type'+mkin.type);
+        console.log('name'+mkin.name);
+        console.log('id'+mkin.id);
+        console.log('class'+mkin.className);
+        console.log('value'+mkin.value);
+        console.log('placeholder'+mkin.placeholder);
+
+        //获取下面标签
+        console.log('href'+mkA.href);
+
+        //修改标签属性
+        mkA.href = "http://www.itcast.cn";
+        mkA.style.fontSize = '100px';
+        console.log('href',+mkA.href);
+        console.log('style'+mkA.style);
+    }
+</script>
+
+</head>
+<body>
+    
+    <input type="text" name="userName" id="din" class="cin" value="ok" placeholder="ph"> 
+    <a href="https:www.baidu.com" class="ca"  id="da">BD</a>
+
+</body>
+</html>
