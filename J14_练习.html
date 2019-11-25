@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+        .s1 {
+            width: 100px;
+            height: 100px;
+            background: red;
+        };
+
+        .s2 {
+            width: 100px;
+            height: 100px;
+            background: yellow;
+        };
+    </style>
+
+    <script>
+        window.onload = function () {
+        
+            var di = document.getElementById("d1");
+
+            var tid = null;
+            function BeginFun() {
+                Change();
+            };  
+
+        function Change(){
+            if (di.className == 's2') {
+                    di.className = 's1';
+                } else {
+                    di.className = 's2';
+                }
+        };
+
+            function EndFun() {
+                alert("清除定时器")
+                //清除定时器
+                clearInterval(tid)
+            };
+        }
+    </script>
+
+</head>
+
+<body>
+
+    <div id="d1" class="s1">AAA</div>
+    <hr>
+
+    <input type="button" value="开始" class="b1" id="ib" onclick=BeginFun()>
+    <input type="button" value="结束" class="b1" id="ib" onclick=EndFun()>
+
+</body>
+
+</html>

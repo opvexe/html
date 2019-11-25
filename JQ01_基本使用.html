@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <!-- 导入jquery 包 -->
+<script src="JS/jquery-1.12.4.min.js"></script> 
+
+<!-- 导包 专门用一个script -->
+<script>
+    //原生js 入口
+    window.onload = function () {
+        alert("原生js入口")
+    };
+
+    //jquery 入口
+    $(document).ready(function(){
+        alert("jquery 入口")
+    });
+
+    //简化函数
+    $(function (){
+        alert("jquery 简化入口")
+    });
+</script>
+    
+</head>
+<body>
+
+    <!-- 
+    $(document).ready
+
+    var obj = $(document)
+      
+    obj.ready
+
+    main()
+     -->
+    
+</body>
+</html>
