@@ -13,6 +13,7 @@
             height: 100px;
             background: red;
         }
+
         .s2 {
             width: 100px;
             height: 100px;
@@ -22,19 +23,30 @@
 
 
     <script>
+        // window.onload = function () {
+        //     var ms = document.getElementById("dd");
+        //     ms.className = 's2';
+        // };
+
         window.onload = function () {
             var ms = document.getElementById("dd");
-            ms.className = 's2';
-        };
+            function changeClick() {
+                if (ms.className == 's2') {
+                    ms.className = 's1';
+                } else {
+                    ms.className = 's2';
+                }
+            }
+        }
     </script>
 
 </head>
 
 <body>
-
-
     <div id="dd" class="s1">CC</div>
-    <div id="dc" class="s2"></div>
+    <!-- <div id="dc" class="s2">CC</div> -->
+    <hr>
+    <input type="button" value="change" onclick="changeClick()">
 </body>
 
 </html>

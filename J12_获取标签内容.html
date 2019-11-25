@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <script>
+    
+        window.onload = function () {
+
+            var mkp  = document.getElementById("dp");
+            
+            // 获取标签内容
+            alert(mkp.innerHTML);
+            alert(mkp.innerText);
+
+            var mkd  = document.getElementById("dd");
+            //innerHTML 在读取标签内容时，如果标签内部还是标签，那么会将html代码形式读取
+            //innerText 直接读取标签的内容的实际内容
+            //如果是单层标签 ， 两个属性没有区别
+            //如果非单层标签
+            alert(mkd.innerHTML);
+            alert(mkd.innerText);
+
+            //通过这两个属性，还可以设置标签内容
+            var mkp2  = document.getElementById("p2")
+            mkp2.innerHTML = '<a href="http://www.itcast.cn">白底</a>'
+            
+            var mkp3 = document.getElementById("p3")
+            mkp3.innerText = '<a href="http://www.itcast.cn">白底</a>'
+        }
+    </script>
+
+</head>
+<body>
+    
+    <p id="dp">这是一个段落</p>
+
+    <div id="dd">
+        <p id="p1"></p>
+    </div>
+
+    <p id="p2"></p>
+    <p id="p3"></p>
+    
+</body>
+</html>
