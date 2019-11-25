@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <script src="./JS/jquery-1.12.4.min.js"></script>
+
+    <script>
+    $(function(){
+
+        //先找到参考标签
+            var mkp  = $('#pd');
+            mkp.css({color:'red','font-size':'100px'});
+
+            //找到同级的前一个标签
+            var mkpp  = mkp.prev();
+            mkpp.css({'color':'blue'})
+
+            //同级前所有标签
+            var mkall = mkp.prevAll();
+            mkall.css({color:'orange'});
+
+            //找到当前标签同级的后一个标签
+            var mkl = mkp.next();
+            mkl.css({color:'green'});
+
+            //找到当前标签的后一级所有标签
+            var mknall = mkp.nextAll();
+            mknall.css({color:'yellow'});
+            
+            //练习：找下一个下一个
+            var mknnn = mkp.next().next();
+            mknnn.css({color:'red'});
+
+            //找当前标签的父标签
+           var mkParent  = mkp.parent();
+           mkParent.css({background:'green'});
+
+           //练习
+           var mkppp  = mkp.parent().prev().prev();
+           mkppp.css({color:'red'});
+
+           //找到当前标签的所有的子标签
+           var mkpc = mkp.children();
+           mkpc.css({color:'red','font-size':'300px'});
+
+
+           //找到指定标签的子标签
+           var mkpc  = mkp.find('.spc')
+           mkpc.css({color:'blue','font-size':'20px'});
+
+           //找到当前标签外的同级子标签（兄弟标签）
+            var mkpopo  = mkp.siblings();
+            mkpopo.css({color:'yellow'});
+
+    });
+    </script>
+
+</head>
+<body>
+
+    <p>这是一个外层上标签</p>
+    <hr>
+   <div>
+       <h1>这是一级标题</h1>
+       <h2>这是二级标题</h2>
+       <h3>这是三级标题</h3>
+        <p id="pd">这是<span>一</span>个<span id='spc'>参</span>考<span>标签</span></p>
+        <h3>这是三级标题</h3>
+        <h2>这是二级标题</h2>
+        <h1>这是一级标题</h1>
+   </div>
+    <hr>
+    <p id="pd">这是一个外层下标签</p>
+    <hr>
+    
+</body>
+</html>

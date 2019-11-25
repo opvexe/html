@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <!-- 导入jquery -->
+
+    <script src="./JS/jquery-1.12.4.min.js"></script>
+
+    <script>
+        $(function(){
+        //标签选择器
+        var $mkDiv = $('h1')
+        $mkDiv.css({'color':'red'});
+
+        //类选择器
+        var mkh2 = $('.ch2');
+        mkh2.css({'color':'red'});
+
+        //id 选择器
+        var mkp = $('#dp');
+        mkp.css({'color':'blue'});
+
+        //层级选择器
+        var vp = $('div p');
+        vp.css({'font-size':'100px'})
+
+        //组选择器
+        var gp = $('h3 h4 h5 h6');
+        gp.css({'color':'red','font-size':'100px'});
+
+        //属性选择器
+        var ipt = $('input[type=text]')
+        ipt.css({background:'red'});
+
+        var ks = $('[class=ccc]');
+        ks.css({background:'blue'});
+
+        });
+    
+    </script>
+
+</head>
+<body>
+
+
+    <!-- 标签选择器 -->
+    <h1>标签选择器</h1>
+    <hr>
+
+
+    <!-- 类选择器 -->
+    <h2 class="ch2">类选择器</h2>
+
+
+    <!-- ID 选择器 -->
+    <p id="dp">ID 选择器</p>
+
+
+    <!-- 层级选择器 -->
+    <div>
+        <p>层级选择器</p>
+    </div>
+    
+    <!--  组选择器 -->
+    <h3>组选择器-h3</h3>
+    <h4>组选择器-h4</h3>
+    <h5>组选择器-h5</h3>
+    <h6>组选择器-h6</h3>
+
+        <!-- 属性选择器 -->
+        <input type="text">
+        <input type="password">
+        <hr>
+        <p class="ccc">VVV</p>
+        <div class="ccc">CCC</div>
+
+</body>
+</html>

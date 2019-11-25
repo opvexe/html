@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+<script src="./JS/jquery-1.12.4.min.js"></script>
+
+<script>
+    $(function (){
+        //选择集过滤
+        var $mdiv  = $('div');
+        alert($mdiv.length);
+
+        //has 
+        var $mkdivp = $mdiv.has('p')
+        $mkdivp.css({color:'red'});
+
+
+        //eq 索引
+        var $diveq = $mdiv.eq(0);
+        $diveq.css({'font-size':'50px'});
+
+    });
+</script>
+
+</head>
+<body>
+
+    <div>FFFFF</div>
+    <div>
+            <p>CC</p>
+    </div>
+    <p>MMM</p>
+</body>
+</html>
