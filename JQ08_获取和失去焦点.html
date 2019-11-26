@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <script src="./JS/jquery-1.12.4.min.js"></script>
+
+    <script>
+    
+    $(function(){
+        //获取标签
+        var ins =$('[type]');
+
+        alert(ins.length);
+
+        console.log(ins);
+
+        //绑定事件
+        ins.focus(function(){
+            $(this).css({'background':'red'});
+        });
+
+        //失去焦点
+        ins.blur(function(){
+            $(this).css({background:'white'});gfdszrresa
+        });
+        
+        //绑定移入事件
+        ins.mouseover(function(){
+            $(this).css({background:'blue'});
+        });
+
+
+        //绑定移除事件
+        ins.mouseout(function(){
+            $(this).css({background:'red'});
+        });
+
+    });
+    
+    </script>
+
+</head>
+<body>
+    
+    <input type="text" name="user" id="dd">
+    <input type="password" name="passwd" id="dp">
+
+</body>
+</html>

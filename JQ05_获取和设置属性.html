@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <script src="./JS/jquery-1.12.4.min.js"></script>
+
+<script>
+
+    $(function(){
+
+        //获取属性
+        var i =$('[name=userName]');
+        console.log(i.prop('type'));
+        console.log(i.prop('name'));
+        console.log(i.prop('id'));
+        console.log(i.prop('class'));
+        console.log(i.prop('value'));
+        console.log(i.prop('placeholder'));
+
+        //获取input value 值
+        //因为value 的值比较常用，所以在取值时，提供一个专门的方法
+        console.log(i.val())
+
+
+        //设置属性
+        i.prop({'name':'account'});
+        i.prop({'value':'gun'});
+
+        //通过val()设置值，这个方法只能给value属性设置值
+        i.val('are you ok ?');
+
+    });
+</script>
+
+</head>
+<body>
+
+    <input type="text" name="userName" id="din" class="cin" value="ok" placeholder="ph">
+    
+</body>
+</html>

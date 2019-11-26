@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <script src="./JS/jquery-1.12.4.min.js"></script>
+
+    <script>
+    
+        $(function(){
+
+            //获取所有标签
+            var lis = $('li');
+
+            //绑定事件
+
+            lis.click(function(){
+                //改变字体颜色
+                $(this).css({color:'red'});
+
+                //改变内容
+                $(this).html($(this).html()+$(this).index());
+
+            });
+
+        });
+    
+    </script>
+
+</head>
+<body>
+
+
+    <input type="button" value="ok" onclick="alert('ok')">
+
+    <!-- 如果在使用标签时 只有li 标签，默认使用的是无序标签 -->
+
+    <li>AAA</li>
+    <li>BBB</li>
+    <li>CCC</li>
+    <li>DDD</li>
+</body>
+</html>
