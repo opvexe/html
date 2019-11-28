@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <!-- 导入vue 文件 -->
+<script src="./js-vue/vue.min.js"></script>
+
+<script>
+
+    // window.onload = function () {
+    //     //创建一个vue的对象
+    //     var vm  = new Vue({
+    //        //用来绑定标签
+    //        el:'div',
+    //        //提供数据
+    //        data:{
+    //         //这里为变量提供数据
+    //         content :'vue基本使用'
+    //        }
+    //     });
+    // }
+
+</script>
+
+</head>
+<body>
+
+    <div>{{content}}</div>
+
+
+    <script>
+      //创建一个vue的对象
+      var vm  = new Vue({
+           //用来绑定标签
+           el:'div',
+           //提供数据
+           data:{
+            //这里为变量提供数据
+            content: 'vue基本使用2'
+           }
+        });
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <script src="./JS/jquery-1.12.4.min.js"></script>
+
+    <script>
+        var json = `[{
+"name":"jack",
+"age":20
+},
+{
+"name":"lisa",
+"age":20
+}]`
+        var perJson = JSON.parse(json);
+
+        console.log(perJson)
+
+        //遍历解析的数据
+        for (let index = 0; index < perJson.length; index++) {
+
+            //获取对象
+            var obj = perJson[index];
+
+            console.log(obj);
+            
+        }
+
+    </script>
+
+</head>
+
+<body>
+
+    <div id="dd">
+
+    </div>
+
+</body>
+
+</html>
