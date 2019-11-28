@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <script src="./js-vue/vue.min.js"></script>
+
+</head>
+<body>
+
+    <div>
+        <!-- 条件渲染 -->
+        <h1 v-if ='flag=1'>一级</h1>
+        <h2 v-else-if ='flag=2'>二级</h2>
+        <h3 v-else-if='flag=3'>三级</h3>
+        <h4 v-else>4级</h4>
+    </div>
+
+    <hr>
+
+    <p v-show='isShow==true'>这是 v-show标签</p>
+
+    <script>
+    
+    var vm  = new Vue({
+        el:'div',
+        data :{
+            flag:0,
+            isShow:true
+        }
+    });
+    
+    </script>
+    
+</body>
+</html>

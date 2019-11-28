@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="/"></script>
+    
+    <script src="./js-vue/vue.min.js"></script>
+
+    <script>
+
+        window.onload = function () {
+            var vm  = new Vue({
+                el:'div',
+                data:{
+                    count:0
+                },
+                //绑定函数---->提供绑定方法
+                methods:{
+                    addOne:function(){
+                        //加1 的方法
+                        this.count +=1;
+                    },
+                    subOne:function(){
+                        //减1 的方法  //跨域访问this.count
+                        this.count -=1;
+                    },
+                }
+            });
+        }        
+            </script>
+
+</head>
+<body>
+
+    <div>
+        <p>当前计数:{{count}}</p>
+        <hr>
+        <!-- 为按钮绑定vue 对象中提供的方法 -->
+        <button v-on:click='addOne'>加1</button>
+        <button @click='subOne'>减1</button>
+    </div>
+    
+</body>
+</html>
